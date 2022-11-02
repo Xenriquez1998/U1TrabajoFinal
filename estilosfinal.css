@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+  
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 70vh !important;
+    background: linear-gradient(45deg, blue, orange);
+    background-size: cover;
+    
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    
+    color: white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    color: white;
+    background: url(https://blogs.microsoft.com/wp-content/uploads/prod/2020/10/HERO-ART-microsoft_azure_1920x1000_nologo.jpg) no-repeat ;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: linear-gradient(45deg,blue,lightblue);
+    padding: 20px;
+}
+
+.price {
+    background: lightcoral;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.caption{
+    color: white;
+}
+
+.estudios{
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+    padding: 80px;
+    background: url(https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) ;
+    background-size: 1300px ;
+    
+}
+
+.contact {
+    padding-top: 20px;
+    background: radial-gradient(circle at 100%, #CFFF8D, #333 50%,#749F82  75%, #425F57 75%);
+    padding-bottom: 0;
+}
+
+.fotoyo{
+    border-radius: 40%;
+}
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
+
+.gridfamilia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+.gridamigos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.gridcontacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.gridestudios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.item-23{
+    background-color: #9c27b0;
+}
+.item-13{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+
+.contenedor{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+
+
+.agrupador > *{
+    padding: 1em;
+}
+
+.contacto-formulario{
+
+    background: #425F57 ;
+
+}
+
+.contacto-info{
+    background: black ;
+    color: white;
+}
+
+.contacto-formulario form{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.contacto-formulario form .block{
+    grid-column: 1/3;
+}
+
+.contacto-formulario form p{
+    margin: 0;
+    padding: 1em;
+
+
+
+}
+
+.contacto-formulario form button,
+.contacto-formulario form input,
+.contacto-formulario form textarea{ 
+    width: 100%;
+    padding: 0.5em;
+    border: 1px;
+    background: #C8E9A0;
+    outline: none;
+    border-bottom: 1px solid #6DD3CE;
+    border-radius: 20px;
+
+}
+
+.contacto-formulario form button{
+    
+    background: lightblue;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+
+}
+
+.contacto-formulario form button:hover,
+.contacto-formulario form button:focus{
+    background: white;
+    color:#351E29;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contacto-info h3,.contacto-info ul,.contacto-info p{
+    text-align: center;
+    margin: 0 0 1rem 0 ;
+
+}
+
+.contacto-info ul{
+    list-style: none;
+    padding: 1em;
+}
+
